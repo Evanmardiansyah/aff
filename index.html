@@ -9,150 +9,155 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .gradient-text {
-            background: linear-gradient(to right, #38bdf8, #818cf8);
+            background: linear-gradient(to right, #fbbf24, #f59e0b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .pulse-btn {
+            animation: pulse-orange 2s infinite;
+        }
+        @keyframes pulse-orange {
+            0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(249, 115, 22, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <header class="bg-slate-900 text-white p-4 sticky top-0 z-50 shadow-md border-b border-slate-800">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-extrabold tracking-tighter">Jago<span class="text-sky-400">Ngulik</span></h1>
-            <span class="text-xs md:text-sm bg-slate-800 border border-slate-700 py-1.5 px-4 rounded-full font-semibold">
-                🔥 Gadget Review
-            </span>
-        </div>
+    <header class="bg-slate-950 text-white p-4 sticky top-0 z-50 shadow-md border-b border-slate-800 flex justify-between items-center">
+        <h1 class="text-2xl font-extrabold tracking-tighter">Jago<span class="text-sky-400">Ngulik</span></h1>
+        <span class="text-xs bg-red-600 text-white py-1 px-3 rounded-full font-bold animate-pulse">
+            🔥 Flash Sale Alert!
+        </span>
     </header>
 
-    <section class="bg-slate-900 text-white pt-16 pb-20 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-block bg-sky-500/20 text-sky-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-sky-500/30">
-                Terlaris di Kelas Rp 100 Ribuan 🚀
+    <section class="bg-slate-900 text-white pt-12 pb-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiMzMzMiLz48L3N2Zz4=')] opacity-20"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block bg-yellow-500/20 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold mb-6 border border-yellow-500/30">
+                ⭐ Viral di TikTok & Reels (Terjual 10.000+ Pcs)
             </div>
-            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                Kiro S11 Pro: Smartwatch <span class="gradient-text">AMOLED</span> Rasa Sultan!
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                Ngapain Beli Jam Jutaan? Kiro S11 Pro Kasih Layar <span class="gradient-text">AMOLED & ChatGPT</span> Cuma 100 Ribuan!
             </h2>
-            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
-                Layar AMOLED 2.3", bisa angkat telepon, tahan air IP68, sampai punya AI ChatGPT bawaan. Yakin masih mau beli jam mahal?
+            <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto font-medium">
+                Desain mewah mirip *brand* buah, layar bezel-less 2.3", bisa angkat telepon langsung, sampai tahan air IP68. Serius, ini *smartwatch* paling nggak masuk akal harganya.
             </p>
             
-            <div class="relative w-full max-w-md mx-auto mb-10">
-                <div class="absolute inset-0 bg-sky-500 blur-3xl opacity-20 rounded-full"></div>
-                <img src="images/id-11134207-8224w-mh7a3d9gq6mjc3.avif" alt="Kiro S11 Pro" class="relative z-10 w-full rounded-2xl shadow-2xl border border-slate-700 transform hover:scale-105 transition duration-500">
+            <div class="relative w-full max-w-md mx-auto mb-10 group">
+                <div class="absolute inset-0 bg-yellow-500 blur-3xl opacity-20 rounded-full transition duration-500 group-hover:opacity-40"></div>
+                <img src="images/id-11134207-8224w-mh7a3d9gq6mjc3.avif" alt="Kiro S11 Pro" class="relative z-10 w-full rounded-3xl shadow-2xl border-2 border-slate-700 transform group-hover:scale-105 transition duration-500">
             </div>
 
-            <a href="LINK_AFFILIATE_SHOPEE_ANDA_DI_SINI" class="inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-[0_0_20px_rgba(249,115,22,0.4)] hover:shadow-[0_0_30px_rgba(249,115,22,0.6)] transition-all transform hover:-translate-y-1">
-                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-                Cek Promo di Shopee
+            <a href="LINK_AFFILIATE_SHOPEE_ANDA_DI_SINI" class="pulse-btn inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-extrabold py-5 px-10 rounded-full text-xl md:text-2xl transition-all transform hover:-translate-y-2">
+                🛒 Cek Diskon Gila di Shopee Sekarang
             </a>
+            <p class="mt-4 text-sm text-slate-400">*Promo gratis ongkir & diskon biasanya cepat habis</p>
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto px-4 -mt-8 relative z-20">
-        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 flex flex-wrap justify-center gap-4 md:gap-12">
+    <section class="max-w-5xl mx-auto px-4 -mt-10 relative z-20">
+        <div class="bg-white rounded-3xl shadow-2xl border border-slate-100 p-6 flex flex-wrap justify-center gap-4 md:gap-12">
             <div class="text-center">
-                <p class="text-2xl font-extrabold text-slate-800">2.3"</p>
-                <p class="text-sm font-semibold text-slate-500">AMOLED HD</p>
+                <p class="text-3xl font-extrabold text-slate-900">2.3"</p>
+                <p class="text-sm font-bold text-sky-600">Layar AMOLED</p>
             </div>
             <div class="text-center">
-                <p class="text-2xl font-extrabold text-slate-800">480 Jam</p>
-                <p class="text-sm font-semibold text-slate-500">Daya Tahan Baterai</p>
+                <p class="text-3xl font-extrabold text-slate-900">480 Jam</p>
+                <p class="text-sm font-bold text-sky-600">Standby Battery</p>
             </div>
             <div class="text-center">
-                <p class="text-2xl font-extrabold text-slate-800">IP68</p>
-                <p class="text-sm font-semibold text-slate-500">Tahan Air</p>
+                <p class="text-3xl font-extrabold text-slate-900">IP68</p>
+                <p class="text-sm font-bold text-sky-600">Sertifikasi Anti Air</p>
             </div>
             <div class="text-center">
-                <p class="text-2xl font-extrabold text-slate-800">BT 6.0</p>
-                <p class="text-sm font-semibold text-slate-500">Koneksi Anti Delay</p>
+                <p class="text-3xl font-extrabold text-slate-900">AI</p>
+                <p class="text-sm font-bold text-sky-600">ChatGPT Built-in</p>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-4">
+    <section class="py-20 px-4 bg-slate-50">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
-                <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Fitur Utama Kiro/Kairos S11 Series</h3>
-                <p class="text-lg text-slate-600">Spek rata kanan yang nggak masuk akal buat harganya.</p>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Bongkar Fitur Kiro S11 Series: Kenapa Jam Ini Gaib di Pasaran?</h3>
+                <p class="text-lg text-slate-600 font-medium">Bukan sekadar jam murah biasa. Ini alasan kenapa banyak orang yang *check-out* lebih dari satu.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 
-                <div class="bg-white p-6 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition duration-300 group">
-                    <div class="overflow-hidden rounded-2xl mb-6">
-                        <img src="images/id-11134207-8224w-mh7a3d9glyx783.avif" alt="Layar AMOLED" class="w-full object-cover transform group-hover:scale-105 transition duration-500">
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-3">Layar AMOLED 2.08" - 2.3" HD</h4>
-                    <p class="text-slate-600 leading-relaxed">Tampilan layar super tajam dan jernih di bawah sinar matahari sekalipun. Desain sporty dengan bezel tipis, plus wallpaper (watch face) yang bisa diganti sesuka hati pakai foto sendiri.</p>
+                <div class="bg-white p-6 rounded-[2rem] shadow-lg border border-slate-100 hover:shadow-2xl hover:border-sky-200 transition duration-300">
+                    <img src="images/id-11134207-8224w-mh7a3d9glyx783.avif" alt="Layar AMOLED" class="w-full rounded-2xl mb-6 object-cover aspect-video">
+                    <h4 class="text-xl font-extrabold text-slate-900 mb-2">Layar AMOLED 2.3": Mata Nggak Sakit!</h4>
+                    <p class="text-slate-600 leading-relaxed">Nggak perlu merem-melek lihat jam di bawah terik matahari. Bezelnya super tipis (kayak HP *flagship*), warna layarnya tajam, dan *watch face*-nya bisa lo ganti-ganti pakai foto keluarga atau ayang.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition duration-300 group">
-                    <div class="overflow-hidden rounded-2xl mb-6">
-                        <img src="images/id-11134207-822ws-mm05f0p8lcsla4.avif" alt="Bluetooth & ChatGPT" class="w-full object-cover transform group-hover:scale-105 transition duration-500">
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-3">Panggilan Bluetooth & AI ChatGPT</h4>
-                    <p class="text-slate-600 leading-relaxed">Udah pakai Bluetooth 6.0! Bisa langsung angkat telepon dari jam, notifikasi WhatsApp masuk tanpa delay, ada NFC, dan yang gila: udah terintegrasi dengan asisten cerdas ChatGPT.</p>
+                <div class="bg-white p-6 rounded-[2rem] shadow-lg border border-slate-100 hover:shadow-2xl hover:border-sky-200 transition duration-300">
+                    <img src="images/id-11134207-822ws-mm05f0p8lcsla4.avif" alt="Bluetooth & ChatGPT" class="w-full rounded-2xl mb-6 object-cover aspect-video">
+                    <h4 class="text-xl font-extrabold text-slate-900 mb-2">Nelpon & Tanya ChatGPT Langsung dari Tangan</h4>
+                    <p class="text-slate-600 leading-relaxed">Lagi motoran atau nyetir? Angkat telepon masuk gampang banget pakai Bluetooth 6.0 (suara jernih, *no delay*). Notif WA masuk lancar, plus ada fitur **AI ChatGPT** yang bikin jam lo bisa diajak mikir!</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition duration-300 group">
-                    <div class="overflow-hidden rounded-2xl mb-6">
-                        <img src="images/id-11134207-8224p-mh7a3d9gos23c5.avif" alt="Fitur Kesehatan" class="w-full object-cover transform group-hover:scale-105 transition duration-500">
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-3">Asisten Kesehatan & Olahraga</h4>
-                    <p class="text-slate-600 leading-relaxed">Pantau terus kondisi tubuhmu. Jam ini dilengkapi sensor pemantauan detak jantung, tekanan darah, serta fitur manajemen olahraga lengkap untuk temenin *workout* lo.</p>
+                <div class="bg-white p-6 rounded-[2rem] shadow-lg border border-slate-100 hover:shadow-2xl hover:border-sky-200 transition duration-300">
+                    <img src="images/id-11134207-8224p-mh7a3d9gos23c5.avif" alt="Fitur Kesehatan" class="w-full rounded-2xl mb-6 object-cover aspect-video">
+                    <h4 class="text-xl font-extrabold text-slate-900 mb-2">Asisten Kesehatan Pribadi 24/7</h4>
+                    <p class="text-slate-600 leading-relaxed">Gaya hidup sehat nggak perlu keluar duit banyak. Ada 130+ mode olahraga untuk *tracking* *workout* lo. Lengkap dengan sensor pemantau detak jantung, tekanan darah, dan kualitas tidur tiap malam.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition duration-300 group">
-                    <div class="overflow-hidden rounded-2xl mb-6">
-                        <img src="images/id-11134207-8224v-mh7a3d9gszrf91.avif" alt="Baterai & Tahan Air" class="w-full object-cover transform group-hover:scale-105 transition duration-500">
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-3">Baterai 480 Jam & Tahan Air IP68</h4>
-                    <p class="text-slate-600 leading-relaxed">Nggak perlu takut hujan atau keringat karena udah sertifikasi IP67/IP68. Baterainya luar biasa awet hingga 480 jam dan udah *support Wireless Charging* yang praktis.</p>
+                <div class="bg-white p-6 rounded-[2rem] shadow-lg border border-slate-100 hover:shadow-2xl hover:border-sky-200 transition duration-300">
+                    <img src="images/id-11134207-8224v-mh7a3d9gszrf91.avif" alt="Baterai & Tahan Air" class="w-full rounded-2xl mb-6 object-cover aspect-video">
+                    <h4 class="text-xl font-extrabold text-slate-900 mb-2">Bawa Mandi? Aman. Tahan Air IP68</h4>
+                    <p class="text-slate-600 leading-relaxed">Sertifikasi IP67/IP68 bikin jam ini tangguh kena hujan lebat atau keringat. Baterainya tembus 480 jam *standby*. Sekali lo ngecas pakai sistem *Wireless Charging*-nya, lo bakal lupa kapan terakhir kali ngecas.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto px-4 pb-20">
-        <div class="bg-sky-50 border border-sky-200 rounded-3xl p-8 md:p-10 relative overflow-hidden">
-            <div class="absolute top-0 right-0 p-8 opacity-10">
-                <svg class="w-32 h-32 text-sky-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+    <section class="max-w-4xl mx-auto px-4 pb-16">
+        <div class="bg-sky-900 rounded-3xl p-8 md:p-10 relative overflow-hidden text-white shadow-2xl">
+            <div class="absolute top-0 right-0 p-8 opacity-20">
+                <svg class="w-32 h-32 text-sky-400" fill="currentColor" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.1L9 6 6 9 1.8 4.7c-1.3-2.4-.9-5.4 1.1-7.4 1.9-1.9 4.6-2.4 6.9-1.5l9.1 9.1c.4-.4 1-.4 1.4 0l2.3 2.3c.5.4.5 1.1.1 1.5z"/></svg>
             </div>
             <div class="relative z-10">
-                <h3 class="text-2xl font-bold text-sky-900 mb-4 flex items-center">
-                    <span class="text-3xl mr-3">💡</span> Catatan Kang Ngulik
+                <h3 class="text-2xl md:text-3xl font-extrabold mb-6 flex items-center">
+                    <span class="mr-3">🛠️</span> Catatan Kang Ngulik
                 </h3>
-                <p class="text-sky-800 text-lg mb-4 font-semibold">Biar jam lo awet bertahun-tahun, wajib perhatiin ini:</p>
-                <ul class="space-y-3 text-sky-800">
-                    <li class="flex items-start">
-                        <span class="text-sky-500 mr-2">✔</span> 
-                        <span><strong>Soal Cas:</strong> Karena baterainya kecil, JANGAN pakai adaptor Fast Charging HP (keluaran 20W/33W). Pakailah *charger* maksimal <strong>5V/1A</strong> (atau colok ke USB laptop) biar baterai nggak bocor.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-sky-500 mr-2">✔</span> 
-                        <span><strong>Koneksi:</strong> Install aplikasi bawaannya di HP Android/iOS lo buat sinkronisasi notifikasi WA dan atur *watch face* custom. Nyalakan izin berjalan di latar belakang (background) biar notif nggak delay.</span>
-                    </li>
-                </ul>
+                <p class="text-sky-100 text-lg mb-6 font-medium">Buat audiens Meta yang baru mau beli, wajib baca tips dari gue biar jamnya awet bertahun-tahun:</p>
+                <div class="bg-sky-950/50 p-6 rounded-2xl border border-sky-800">
+                    <ul class="space-y-4 text-sky-100 font-medium">
+                        <li class="flex items-start">
+                            <span class="bg-sky-500 text-white rounded-full p-1 mr-3 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <span><strong>Jangan Pakai Kepala Charger HP Fast Charging!</strong> Baterai smartwatch ini arusnya kecil. Colok aja ke USB laptop, STB TV, atau pakai kepala charger jadul (5V/1A) biar baterainya nggak cepet *drop*.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-sky-500 text-white rounded-full p-1 mr-3 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <span><strong>Koneksi Anti Putus:</strong> Setelah beli, langsung *download* aplikasi bawaannya. Jangan lupa nyalakan izin aplikasi berjalan di *background* HP lo, dijamin notif WA masuk terus tanpa *delay*.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-slate-900 text-white py-16 px-4 text-center">
+    <section class="bg-slate-950 text-white py-20 px-4 text-center border-t-4 border-orange-500">
         <div class="max-w-2xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Stok Cepat Banget Habis!</h2>
-            <p class="text-slate-400 mb-8 text-lg">Dengan spek gila dan harga segini, nggak heran Kiro S11 Series ini sering ludes. Mending amankan warna favorit lo sekarang sebelum kehabisan flash sale.</p>
-            <a href="LINK_AFFILIATE_SHOPEE_ANDA_DI_SINI" class="inline-flex w-full sm:w-auto items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-[0_10px_25px_rgba(249,115,22,0.5)] transition transform hover:scale-105">
-                🛒 Beli Kiro S11 Sekarang
+            <h2 class="text-4xl font-extrabold mb-4">Awas Kehabisan Flash Sale! 🚨</h2>
+            <p class="text-slate-400 mb-10 text-xl font-medium">Dengan harga di bawah 200 ribu untuk spek AMOLED & ChatGPT, stok warna favorit biasanya ludes dalam hitungan jam. </p>
+            
+            <a href="LINK_AFFILIATE_SHOPEE_ANDA_DI_SINI" class="pulse-btn inline-flex w-full sm:w-auto flex-col items-center justify-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-5 px-12 rounded-full text-2xl transition transform hover:scale-105">
+                <span>🛒 Amankan Stok di Shopee</span>
+                <span class="text-sm font-normal mt-1 opacity-80">Klik untuk lihat harga & warna tersedia</span>
             </a>
+            
+            <div class="mt-8 flex justify-center items-center gap-4 text-slate-500 text-sm font-bold">
+                <span class="flex items-center"><svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-7h2v7h-2zm1-10c-.83 0-1.5-.67-1.5-1.5S11.17 5 12 5s1.5.67 1.5 1.5S12.83 7.5 12 7.5z"/></svg> Garansi Shopee</span>
+                <span class="flex items-center"><svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg> Gratis Ongkir*</span>
+            </div>
         </div>
     </section>
-
-    <footer class="bg-black text-center text-slate-500 py-8 text-sm">
-        <p>&copy; 2026 JagoNgulik. Tutorial, Review Jujur & Seputar IT.</p>
-    </footer>
 
 </body>
 </html>
